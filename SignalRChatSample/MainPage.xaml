@@ -1,0 +1,19 @@
+﻿<Page
+    x:Class="SignalRChatSample.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SignalRChatSample"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox x:Name="ConnectURL" HorizontalAlignment="Left" Margin="65,119,0,0" Text="URL" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <Button Content="Connect" Margin="475,119,0,0" VerticalAlignment="Top" Width="100" Click="OnConnectSignalR"/>
+        <TextBox x:Name="SendText" HorizontalAlignment="Left" Margin="65,178,0,0" Text="send text" TextWrapping="Wrap" VerticalAlignment="Top" Width="400"/>
+        <Button Content="Send" Margin="475,178,0,0" VerticalAlignment="Top" Click="OnSendText" Width="100"/>
+        <TextBlock x:Name="ReceiveText" HorizontalAlignment="Left" Margin="65,243,0,33" Text="" TextWrapping="Wrap" Width="507"/>
+
+    </Grid>
+</Page>
